@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%
+}
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: #354457;
+}
+.logo-box {
+    width: 200px;
+    height: 100%;
+    line-height: 70px;
+    color: #b3bcc5;
+    padding-left: 20px;
+}
+.logo-box .logo {
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+    background-image: url("./imgs/logo.png");
+    background-size: 100% 100%;
+    display: inline-block;
+}
+.content {
+    width: 100%;
+    height: calc(100% - 70px);
+    position: relative;
+}
+.left-content {
+    width: 200px;
+    height: 100%;
+    background-color: #4d5e70;
+    position: absolute;
+}
+.left-content dt {
+    font-weight: bold;
+    padding-left: 8px;
+}
+.left-content dd {
+    padding-left: 30px;
+}
+.left-content dt,
+.left-content dd {
+    font-size: 14px;
+    line-height: 40px;
+    height: 40px;
+    color: #b3bcc5;
+    cursor: pointer;
+}
+.left-content dd:hover{
+    background-color:pink;
+    color: white;
+}
+.left-content dd.active {
+    background-color: #ddd;
+    color: black;
+}
+.right-content {
+    height: 100%;
+    width: calc(100% - 200px);
+    position: absolute;
+    left: 200px;
+}
+.right-content .conactive{
+    display: block;
+}
+.add-student{
+    display: none;
+}
+.student-list{
+    display: none;
+}
+.right-content table {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+table th {
+    background-color: #e3e8ee;
+}
+button.btn {
+    outline: none;
+    border: none;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.edit {
+    background-color: greenyellow;
+}
+
+.del {
+    background-color: rgb(198, 18, 214);
+}
+.addform{
+    margin: 100px auto;
+}
+.stu-form{
+    width: 400px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;  
+}
+.stu-form div{
+    margin: 10px 0;  /* 这里触发margin合并*/
+}
+.add-student .stu-form .radio-label{
+    width: 60px;
+}
+.stu-form input{
+    font-size: 14px;
+    border-radius: 10px;
+    border:1px solid pink;
+}
+.stu-form label{
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+}
+.stu-form button{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 8px;
+}
+.dialog{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+.content .right-content .dialog .mask{
+    position: fixed;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(198, 18, 214,0.5)
+}
+.content .right-content .dialog .mask .dialogcontent{
+    width: 500px;
+    height:450px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top:-250px;
+}
+.dialog .mask .dialogcontent h2{
+    padding-left: 10px;
+}
+.dialog.show{
+    display: block;
+}
+
+
+
